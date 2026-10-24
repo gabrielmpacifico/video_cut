@@ -1,0 +1,21 @@
+CORTAR VÍDEO
+
+Como usar
+1. Dê dois cliques em iniciar.bat.
+2. Selecione o vídeo, informe início e fim e escolha onde salvar.
+   Os tempos aceitam segundos (75) ou HH:MM:SS (00:01:15).
+3. Clique em “Cortar vídeo”. O resultado recebe _cortado no nome por padrão.
+
+Requisito
+Na primeira utilização, o programa baixa automaticamente uma cópia portátil do
+FFmpeg para a subpasta ffmpeg. É necessário ter conexão com a internet nesse
+primeiro uso. Não é preciso instalar o FFmpeg nem alterar o PATH do Windows.
+
+Qualidade e precisão
+O vídeo e o áudio são copiados sem recodificação, mantendo a qualidade original e
+fazendo o corte rapidamente. Como o corte sem recodificação depende dos keyframes,
+o início ou o fim pode variar um pouco em relação ao tempo informado. Para precisão
+quadro a quadro seria necessário recodificar o trecho.
+
+O FFmpeg portátil é obtido dos builds para Windows indicados pelo site oficial
+do FFmpeg: https://www.gyan.dev/ffmpeg/builds/
